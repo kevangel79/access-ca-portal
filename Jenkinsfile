@@ -27,12 +27,12 @@ pipeline {
                 dockerfile {
                     filename "Dockerfile"
                     dir "${PROJECT_DIR}/access"
-                    args "-u root"
+                    args "-u root -v ${WORKSPACE}/${PROJECT_DIR}/access:/opt/app"
                 }
             }
             steps {
                 sh """
-                    cd ${WORKSPACE}/${PROJECT_DIR}/access
+                    cd /opt/app
                     GENERATE_REPORTS=true rake ci_report test test/models/*test.rb
                 """
             }
