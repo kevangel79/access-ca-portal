@@ -21,7 +21,7 @@ RUN             gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C2754
 
 RUN             bash -lc "rvm use $RUBY_VERSION && rvm gemset create app-env"
 RUN             bash -lc "rvm use $RUBY_VERSION@app-env --default"
-RUN             bash -lc "gem install bundler"
+RUN             bash -lc "gem install bundler -v 1.17.3"
 
 ONBUILD RUN     mkdir -p /opt/app
 ONBUILD COPY    Gemfile /opt/app/
