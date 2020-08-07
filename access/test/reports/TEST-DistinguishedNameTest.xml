@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DistinguishedNameTest" tests="3" time="0.075727871" failures="0" errors="0" skipped="0" assertions="9" timestamp="2020-08-07T11:56:05+00:00">
-  <testcase name="test_valid_record" time="0.0036655590010923333" assertions="1">
-  </testcase>
-  <testcase name="test_with_invalid_subject_dn" time="0.007572471000457881" assertions="6">
-  </testcase>
-  <testcase name="test_without_compulsory_field" time="0.003990663000877248" assertions="2">
-  </testcase>
-</testsuite>
