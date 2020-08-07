@@ -27,7 +27,7 @@ pipeline {
                 dockerfile {
                     filename "Dockerfile"
                     dir "${PROJECT_DIR}/access"
-                    args "-u root -v ${WORKSPACE}/${PROJECT_DIR}/access:/opt/app"
+                    args "-v ${WORKSPACE}/${PROJECT_DIR}/access:/opt/app"
                 }
             }
             steps {
