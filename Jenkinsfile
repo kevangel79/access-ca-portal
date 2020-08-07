@@ -27,13 +27,14 @@ pipeline {
                 dockerfile {
                     filename "Dockerfile"
                     dir "${PROJECT_DIR}/access"
-                    args "-u root:root -v ${WORKSPACE}/${PROJECT_DIR}/access:/opt/app"
+                    args "-u root:root"
                 }
             }
             steps {
                 sh """
-                    cd /opt/app
-                    GENERATE_REPORTS=true rake ci_report test test/models/*test.rb
+                    cd ${WORKSPACE}/${PROJECT_DIR}/access
+                    bundle install
+                    GENERATE_REPORTS=true /usr/local/rvm/rubies/ruby-2.2.3/bin/rake ci_report test test/models/*test.rb
                 """
             }
         }
