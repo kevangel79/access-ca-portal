@@ -14,7 +14,7 @@ pipeline {
             agent {
                 dockerfile {
                     filename "Dockerfile"
-                    dir "${PROJECT_DIR}/docker"
+                    dir "${PROJECT_DIR}/docker/ruby"
                     additionalBuildArgs "-t centos6-ruby2.2.3:latest"
                 }
             }
