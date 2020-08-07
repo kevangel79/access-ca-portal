@@ -33,7 +33,7 @@ pipeline {
             steps {
                 sh """
                     cd ${WORKSPACE}/${PROJECT_DIR}/access
-                    bundle install
+                    /usr/local/rvm/gems/ruby-2.2.3@app-env/bin/bundle install
                     GENERATE_REPORTS=true /usr/local/rvm/rubies/ruby-2.2.3/bin/rake ci_report test test/models/*test.rb
                 """
             }
