@@ -16,13 +16,12 @@ pipeline {
                     filename "Dockerfile"
                     dir "${PROJECT_DIR}/docker/ruby"
                     additionalBuildArgs "-t centos6-ruby2.2.3:latest"
-                    args "-u root:root"
                 }
             }
             steps {
                 sh """
                     cd ${WORKSPACE}/${PROJECT_DIR}/access
-                    GENERATE_REPORTS=true rake ci_report test test/models/*test.rb
+                    GENERATE_REPORTS=true /usr/local/rvm/rubies/ruby-2.2.3/bin/rake ci_report test test/models/*test.rb
                 """
             }
         }
