@@ -33,7 +33,7 @@ pipeline {
             steps {
                 sh """
                     cd /opt/app
-                    GENERATE_REPORTS=true /usr/local/rvm/rubies/ruby-2.2.3/bin/rake ci_report test test/models/*test.rb
+                    GENERATE_REPORTS=true rake ci_report test test/models/*test.rb
                 """
             }
         }
