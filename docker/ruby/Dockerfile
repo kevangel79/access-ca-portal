@@ -27,4 +27,4 @@ ONBUILD RUN     mkdir -p /opt/app
 ONBUILD COPY    Gemfile /opt/app/
 ONBUILD COPY    Gemfile.lock /opt/app/
 ONBUILD WORKDIR /opt/app
-ONBUILD RUN     bash -lc 'bundle install'
+ONBUILD RUN     bash -lc 'bundle install && bundle update rake'
