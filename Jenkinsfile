@@ -22,7 +22,7 @@ pipeline {
                 echo 'step1'
             }
         }
-        stage('Create base image'){
+        stage('Create test image'){
             agent {
                 dockerfile {
                     filename "Dockerfile"
