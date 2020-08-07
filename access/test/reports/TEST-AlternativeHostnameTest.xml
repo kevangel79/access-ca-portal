@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AlternativeHostnameTest" tests="3" time="0.346645415" failures="0" errors="0" skipped="0" assertions="11" timestamp="2020-08-07T11:56:04+00:00">
+  <testcase name="test_alternative_hostname_without_compulsory_field" time="0.17488252199837007" assertions="4">
+  </testcase>
+  <testcase name="test_alternative_hostname_with_invalid_hostname" time="0.012169603000074858" assertions="6">
+  </testcase>
+  <testcase name="test_valid_record" time="0.29809205799756455" assertions="1">
+  </testcase>
+</testsuite>

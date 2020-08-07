@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AlternativeEmailTest" tests="3" time="0.015208081" failures="0" errors="0" skipped="0" assertions="9" timestamp="2020-08-07T11:56:03+00:00">
+  <testcase name="test_alternative_email_with_invalid_email" time="0.013496553001459688" assertions="6">
+  </testcase>
+  <testcase name="test_alternative_email_without_compulsory_field" time="0.0035129649986629374" assertions="2">
+  </testcase>
+  <testcase name="test_valid_record" time="0.0028635679991566576" assertions="1">
+  </testcase>
+</testsuite>

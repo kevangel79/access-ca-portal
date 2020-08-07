@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PositionTest" tests="2" time="0.0097117" failures="0" errors="0" skipped="0" assertions="3" timestamp="2020-08-07T11:56:05+00:00">
+  <testcase name="test_without_compulsory_field" time="0.0328806479992636" assertions="2">
+  </testcase>
+  <testcase name="test_valid_position_record" time="0.0050474589988880325" assertions="1">
+  </testcase>
+</testsuite>

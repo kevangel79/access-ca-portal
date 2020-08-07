@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrganizationTest" tests="3" time="0.855731779" failures="0" errors="0" skipped="0" assertions="4" timestamp="2020-08-07T11:56:03+00:00">
+  <testcase name="test_org_without_compulsory_field" time="0.00830877699991106" assertions="2">
+  </testcase>
+  <testcase name="test_valid_record" time="0.0022049200015317183" assertions="1">
+  </testcase>
+  <testcase name="test_case_insensitivity_of_domain" time="0.0034355919997324236" assertions="1">
+  </testcase>
+</testsuite>

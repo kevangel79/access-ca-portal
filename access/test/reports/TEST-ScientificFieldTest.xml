@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ScientificFieldTest" tests="2" time="0.04560261" failures="0" errors="0" skipped="0" assertions="3" timestamp="2020-08-07T11:56:05+00:00">
+  <testcase name="test_without_compulsory_field" time="0.005194634999497794" assertions="2">
+  </testcase>
+  <testcase name="test_valid_scientific_field_record" time="0.003087529999902472" assertions="1">
+  </testcase>
+</testsuite>

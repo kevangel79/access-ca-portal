@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AlternativeNameTest" tests="2" time="0.186219635" failures="0" errors="0" skipped="0" assertions="10" timestamp="2020-08-07T11:56:04+00:00">
+  <testcase name="test_valid_record" time="0.03394570999807911" assertions="2">
+  </testcase>
+  <testcase name="test_alternative_name_without_compulsory_field" time="0.01062671999898157" assertions="8">
+  </testcase>
+</testsuite>
