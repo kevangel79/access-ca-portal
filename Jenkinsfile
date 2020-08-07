@@ -19,6 +19,7 @@ pipeline {
                 }
             }
             steps {
+                echo 'step1'
             }
         }
         stage('Create base image'){
@@ -30,6 +31,7 @@ pipeline {
                 }
             }
             steps {
+                echo 'step1'
             }
         }
     }
