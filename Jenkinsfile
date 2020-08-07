@@ -34,7 +34,7 @@ pipeline {
                 sh """
                     cd /opt/app
                     export GENERATE_REPORTS=true 
-                    rake ci_report test test/models/*test.rb
+                    /usr/local/rvm/gems/ruby-2.2.3@app-env/bin/rake ci_report test test/models/*test.rb
                 """
             }
         }
