@@ -16,7 +16,7 @@ pipeline {
                     filename "Dockerfile"
                     dir "${PROJECT_DIR}/docker/ruby"
                     additionalBuildArgs "-t centos6-ruby2.2.3:latest"
-                    args "-v ${WORKDIR}/${PROJECT_DIR}:/opt/app"
+                    args "-v ${WORKSPACE}/${PROJECT_DIR}:/opt/app"
                 }
             }
             steps {
