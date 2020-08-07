@@ -31,7 +31,10 @@ pipeline {
                 }
             }
             steps {
-                echo 'step1'
+                sh """
+                    cd ${WORKSPACE}/${PROJECT_DIR}/access
+                    GENERATE_REPORTS=true rake ci_report test test/models/*test.rb
+                """
             }
         }
     }
